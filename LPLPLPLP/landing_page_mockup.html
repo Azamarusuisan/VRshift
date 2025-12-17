@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOMIRUTO Mockup Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 100%;
+            /* Full width */
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Default to Desktop */
+        .mobile-ver {
+            display: none;
+        }
+
+        .desktop-ver {
+            display: block;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .mobile-ver {
+                display: block;
+            }
+
+            .desktop-ver {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 
+            Desktop Version Images 
+        -->
+        <div class="desktop-ver">
+            <img src="gomiruto_hero_section_1765947407204.png" alt="Hero Section">
+            <img src="gomiruto_concept_intro_1765947423436.png" alt="Concept Intro">
+            <img src="gomiruto_problem_header_jp_1765947602111.png" alt="Problem Header">
+            <img src="gomiruto_problem_details_1765947473876.png" alt="Problem Details">
+            <img src="gomiruto_dynamic_management_1765947490528.png" alt="Dynamic Management">
+            <img src="gomiruto_visualization_jp_1765947617962.png" alt="Visualization">
+            <img src="gomiruto_after_implementation_jp_1765947637669.png" alt="After Implementation">
+            <img src="gomiruto_task_management_jp_1765947775422.png" alt="Task Management">
+            <img src="gomiruto_cta_jp_1765947792272.png" alt="CTA">
+        </div>
+
+        <!-- 
+            Mobile Version Images 
+            Note: Only 1-7 are available currently due to quota limits.
+            8 and 9 will fallback or just not show for now.
+        -->
+        <div class="mobile-ver">
+            <img src="gomiruto_hero_mobile_1765948087889.png" alt="Hero Mobile">
+            <img src="gomiruto_concept_mobile_1765948104831.png" alt="Concept Mobile">
+            <img src="gomiruto_problem_header_mobile_1765948123357.png" alt="Problem Header Mobile">
+            <img src="gomiruto_problem_details_mobile_1765948150197.png" alt="Problem Details Mobile">
+            <img src="gomiruto_dynamic_management_mobile_1765948165036.png" alt="Dynamic Mgmt Mobile">
+            <img src="gomiruto_visualization_mobile_1765948180342.png" alt="Visualization Mobile">
+            <img src="gomiruto_after_implementation_mobile_1765948212896.png" alt="After Implementation Mobile">
+            <!-- Missing 8 and 9 mobile images -->
+            <div style="padding: 20px; text-align: center; background: #ddd; color: #666;">
+                <p>※ 以下のセクション（タスク管理、CTA）のモバイル版画像は現在生成準備中です。</p>
+                <p>（デスクトップ版の画像を表示します）</p>
+                <!-- Fallback to desktop for missing mobile images -->
+                <img src="gomiruto_task_management_jp_1765947775422.png" alt="Task Management (Desktop Fallback)">
+                <img src="gomiruto_cta_jp_1765947792272.png" alt="CTA (Desktop Fallback)">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

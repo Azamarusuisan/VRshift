@@ -1,6 +1,6 @@
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
-import Sidebar from '@/components/Sidebar'
+import DashboardClient from '@/components/DashboardClient'
 import { Profile } from '@/types/database'
 
 interface DashboardLayoutProps {
@@ -28,11 +28,8 @@ export default async function DashboardLayout({ children }: DashboardLayoutProps
     const userProfile = profile as Profile
 
     return (
-        <div className="flex min-h-screen bg-gray-50">
-            <Sidebar profile={userProfile} />
-            <main className="flex-1 p-8">
-                {children}
-            </main>
-        </div>
+        <DashboardClient profile={userProfile}>
+            {children}
+        </DashboardClient>
     )
 }
